@@ -1,5 +1,20 @@
-//We always have to include the library
-#include "LedControl.h"
+// Copyright (C) 2017  Martin Feil aka. SGDW
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/
+
+
+#include "LedControl.h" // see http://wayoda.github.io/LedControl/
 #include "font8x8_basic_low_mem.h"
 #include "icons_preset.h"
 #include <avr/pgmspace.h>
@@ -281,7 +296,7 @@ void tickProtocoll() {
 void parseProtocoll() {
 	if(buffer[0] == CMD_SCROLL_TEXT) {
 		text = "";
-		for(int i = 1; i < bufferPos-1; i++) {
+		for(int i = 1; i < bufferPos; i++) {
 			if (buffer[i] != '\r' && buffer[i] != '\n') {
 				text += buffer[i];
 			}
