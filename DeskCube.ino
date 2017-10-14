@@ -15,7 +15,7 @@
 
 
 #include "LedControl.h" // see http://wayoda.github.io/LedControl/
-#include "font8x8_basic_low_mem.h"
+#include "font8x8_basic_low_mem.h" // see https://github.com/dhepper/font8x8/blob/master/font8x8_basic.h
 #include "icons_preset.h"
 #include <avr/pgmspace.h>
 #define FS(x) (__FlashStringHelper*)(x)

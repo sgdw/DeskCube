@@ -34,6 +34,15 @@ Serial Commands
     c                  Clear display
     b<action>          Turn blinking on or off (action '+' is on; '-' is off)
 
+External Libraries
+------------------
+
+LedControl:
+http://wayoda.github.io/LedControl/
+
+font8x8:
+https://github.com/dhepper/font8x8/blob/master/font8x8_basic.h
+
 Example Graphics
 ----------------
 
